@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>G00425758</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" id="border">
+  <ion-list>
+
+    <ion-item *ngFor="let n of statistics">
+      
+      <h2>{{ n.name.official }}</h2> 
+  
+  </ion-item> 
+
+    <ion-item *ngFor="let l of statistics">
+      <h2>{{ l.languages }}</h2>
+    
+  </ion-item>
+   <ion-item *ngFor="let p of statistics">
+      
+      <h2>{{ p.population }}</h2> 
+  
+  </ion-item> 
+  <ion-item *ngFor="let curr of currency">
+      
+    <h2>{{ curr.currencies }} : {{curr.symbol}} </h2> 
+
+</ion-item> 
+  </ion-list>
+</ion-content>
